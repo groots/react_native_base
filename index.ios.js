@@ -11,7 +11,7 @@ import React, {
   View
 } from 'react-native';
 
-import Login from './login';
+import Login from './Login';
 
 class react_mobile_base extends Component {
   render() {

@@ -21,7 +21,7 @@ class Login extends Component {
 					Login:
 				</Text>
 				<TextInput style={styles.input} placeholder="Username" />
-				<TextInput style={styles.input} placeholder="Password" secureTextEntry="true" />
+				<TextInput style={styles.input} placeholder="Password" secureTextEntry={true} />
 			</View>
 		);
 	}
