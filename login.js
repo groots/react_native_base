@@ -18,10 +18,10 @@ class Login extends Component {
 		return(
 			<View style={styles.container}>
 				<Text>
-					Login:
+					Login
 				</Text>
-				<TextInput style={styles.input} placeholder="Username" />
-				<TextInput style={styles.input} placeholder="Password" secureTextEntry={true} />
+				<TextInput style={styles.input} placeholder="Username"></TextInput>
+				<TextInput style={{backgroundColor: 'red'}} placeholder="Password" secureTextEntry={true} />
 			</View>
 		);
 	}
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#fff'
   },
   welcome: {
     fontSize: 20,
