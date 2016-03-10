@@ -5,7 +5,7 @@
 'use strict';
 
 import React from 'react-native';
-import Main from './App/Components/Main';
+let Main = require('./App/Components/Main');
 
 let {
   AppRegistry,
@@ -17,7 +17,10 @@ let {
 } = React;
 
 
-const styles = StyleSheet.create({
+let styles = StyleSheet.create({
+  wrapper: {
+    flex: 1
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -30,10 +33,10 @@ class react_mobile_base extends Component {
   render() {
     return (
       <NavigatorIOS
-      
+        style={ styles.wrapper }
         initialRoute={{
-          title:'IOS Base App',
-          component: Main
+          component: Main,
+          title: 'IOS Base App'
         }} />
     );
   }
