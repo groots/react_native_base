@@ -1,7 +1,11 @@
 'use strict';
 
 import React, {
+	AppRegistry,
 	Component,
+	Image,
+	ListView,
+	Text,
 	View, 
 	StyleSheet
 } from 'react-native';

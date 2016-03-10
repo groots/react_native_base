@@ -8,17 +8,19 @@ import React, {
   Component,
   StyleSheet,
   Text,
-  View
+  View,
+  NavigatorIOS
 } from 'react-native';
 
-import Login from './Login';
 
 class react_mobile_base extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Login />
-      </View>
+      <NavigatorIOS
+        initialRoute={{
+          title:'IOS Base App',
+          coponent: Main
+        }} />
     );
   }
 }

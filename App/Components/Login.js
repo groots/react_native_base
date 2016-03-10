@@ -5,7 +5,7 @@ import React, {
 	StyleSheet,
 	Text,
 	TextInput,
-	TouchableHightlight,
+	TouchableNativeFeedback,
 	View
 } from 'react-native';
 
@@ -18,10 +18,20 @@ class Login extends Component {
 		return(
 			<View style={styles.container}>
 				<Text>
-					Login
+					App Login
 				</Text>
-				<TextInput style={styles.input} placeholder="Username"></TextInput>
-				<TextInput style={{backgroundColor: 'red'}} placeholder="Password" secureTextEntry={true} />
+				<TextInput
+		          ref="input"
+		          autoCapitalize="none"
+		          autoCorrect={false}
+		          autoFocus={true}
+		          onChange={this.props.onSearchChange}
+		          placeholder="Search a movie..."
+		          placeholderTextColor="rgba(255, 255, 255, 0.5)"
+		          onFocus={this.props.onFocus}
+		          style={styles.searchBarInput}
+		        />
+				
 			</View>
 		);
 	}
