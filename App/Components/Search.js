@@ -22,7 +22,8 @@ class Search extends Component {
 	handleSearch(event){
 		this.setState({
 			searchTerm: event.nativeEvent.text
-		})
+		});
+		console.log('SEARCH Changed');
 	}
 	handleSubmit(){
 		this.setState({

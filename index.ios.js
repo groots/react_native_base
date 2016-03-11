@@ -6,6 +6,7 @@
 
 import React from 'react-native';
 let Main = require('./App/Components/Main');
+let Styles = require('./App/Components/Styles');
 let Search = require('./App/Components/Search');
 
 let {
@@ -33,13 +34,13 @@ let styles = StyleSheet.create({
 class react_mobile_base extends Component {
   render() {
     return (
-      // <NavigatorIOS
-      //   style={ styles.wrapper }
-      //   initialRoute={{
-      //     component: Main,
-      //     title: 'IOS Base App'
-      //   }} />
-        <Search />
+      <NavigatorIOS
+        style={ styles.wrapper }
+        initialRoute={{
+          component: Main,
+          title: 'IOS Base App'
+        }} />
+        // <Search />
         
     );
   }
