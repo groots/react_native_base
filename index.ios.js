@@ -4,44 +4,27 @@
  */
 'use strict';
 
-import React from 'react-native';
-let Main = require('./App/Components/Main');
-let Styles = require('./App/Components/Styles');
-let Search = require('./App/Components/Search');
+import React  from 'react-native';
+import Main   from './App/Components/Main';
+import Styles from './App/Components/Styles';
 
 let {
   AppRegistry,
   Component,
-  StyleSheet,
   Text,
   View,
   NavigatorIOS
 } = React;
 
-
-let styles = StyleSheet.create({
-  wrapper: {
-    flex: 1
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#000fff',
-  }
-});
-
 class react_mobile_base extends Component {
   render() {
-    return (
-      <NavigatorIOS
-        style={ styles.wrapper }
-        initialRoute={{
-          component: Main,
-          title: 'IOS Base App'
-        }} />
-        // <Search />
-        
+    return (    
+        <NavigatorIOS
+          style={ Styles.appWrap }
+          initialRoute={{
+            component: Main,
+            title: 'IOS Base App'
+          }} />
     );
   }
 }
